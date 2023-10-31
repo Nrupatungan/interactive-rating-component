@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./src/dist/output.css">
+
+  <!-- Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- JS Scripts -->
+  <script src="./src/app/js/script.js" defer></script>
+</head>
+<body class="bg-Very_Dark_Blue min-h-screen grid place-items-center px-5 font-Overpass">
+
+  <main class="bg-gray-800 rounded-2xl max-w-_328 lg:max-w-_342">
+    <div id="rating-card" class="px-5 py-7 lg:px-6 lg:py-8">
+
+      <!-- Rating state start -->
+      <img src="./assets/images/icon-star.svg" alt="star icon" class="bg-gray-700 p-2 rounded-full mb-3 lg:mb-4 lg:p-3">
+      <h1 class="text-White text-2xl font-bold mb-2 lg:text-3xl lg:mb-3">How did we do?</h1>
+      <p class="text-Light_Grey text-sm mb-4 font-normal lg:text-base">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      
+      <div class="button-group flex flex-wrap justify-between text-Light_Grey mb-5">
+        <button id="rating-btn" class="bg-gray-700 w-12 h-12 text-White  rounded-full font-medium active:scale-90 hover:bg-Orange hover:text-White ease-linear duration-150">1</button>
+        <button id="rating-btn" class="bg-gray-700 w-12 h-12 text-White rounded-full font-medium active:scale-90 hover:bg-Orange hover:text-White ease-linear duration-150">2</button>
+        <button id="rating-btn" class="bg-gray-700 w-12 h-12 text-White rounded-full font-medium active:scale-90 hover:bg-Orange hover:text-White ease-linear duration-150">3</button>
+        <button id="rating-btn" class="bg-gray-700 w-12 h-12 text-White  rounded-full font-medium active:scale-90 hover:bg-Orange hover:text-White ease-linear duration-150">4</button>
+        <button id="rating-btn" class="bg-gray-700 w-12 h-12 text-White rounded-full font-medium active:scale-90 hover:bg-Orange hover:text-White ease-linear duration-150">5</button>
+      </div>
+      
+
+      <button id="sub-btn" class="uppercase bg-Orange py-3 w-full rounded-full text-sm font-normal text-White tracking-wider hover:text-Orange hover:bg-White active:scale-90 ease-linear duration-200">Submit</button>
+      <!-- Rating state end -->
+
+    </div>
+    <div id="thank-you-card" class="text-center px-5 py-8 hidden lg:px-6 lg:py-9">
+      <!-- Thank you state start -->
+      <img src="./assets/images/illustration-thank-you.svg" alt="mobile illustration" class="mx-auto mb-5">
+
+      <p class="bg-gray-700 w-44 py-1 mx-auto rounded-full text-Orange opacity-80 text-sm mb-7 font-normal lg:text-base lg:mb-8 lg:w-48">You selected <span id="rating-number">4</span> out of 5</p>
+
+      <h2 class="text-2xl text-White font-bold mb-2 lg:text-3xl lg:mb-3">Thank you!</h2>
+
+      <p class="text-sm text-Light_Grey font-normal lg:text-base">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+      <!-- Thank you state end -->
+    </div>
+  </main>
+
+  <footer class="absolute bottom-0">
+      <p class="text-White text-sm lg:text-base">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-500 underline">Frontend Mentor</a>. Coded by <a href="https://www.github.com/Nrupatungan" target="_blank" class="text-amber-300 underline">Dinesh Sake</a>.</p>
+  </footer>
+
+</body>
+</html>
